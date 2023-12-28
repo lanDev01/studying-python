@@ -1,7 +1,6 @@
 # Exercícios
-
-nome = "Alan Gonçalves"
-email = "lnjnr9215@gmail.com"
+name = input("Digite seu nome ")
+email = input("Digite seu E-mail ")
 
 # Descobrir o servidor do email
 
@@ -11,8 +10,8 @@ print(f"{separator}\n")
 
 # pegar o 1° nome do usuário
 
-separatorfirstName = nome.find(" ")
-firstName = nome[:separatorfirstName]
+separatorfirstName = name.find(" ")
+firstName = name[:separatorfirstName]
 print(f"{firstName}\n")
 
 # Construir uma mensagem: Usuario {primeiro nome} cadastrado com sucesso com o {email}
