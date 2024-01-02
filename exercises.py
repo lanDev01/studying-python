@@ -60,3 +60,37 @@ if itemIndex in dictionaries:
 else:
     print("Produto não cadastrado!")
 
+# Exercícios 4
+    
+vendas22 = {
+    "jan": 15000,
+    "fev": 15500,
+    "mar": 14000,
+    "abr": 16600,
+    "mai": 16300,
+    "jun": 17000
+}
+
+vendas23 = {
+    "jan": 17000,
+    "fev": 15000,
+    "mar": 17500,
+    "abr": 16900,
+    "mai": 16000,
+    "jun": 18500
+}
+
+for month in vendas22:
+    print(f"Mês {month}: {(vendas23[month] / vendas22[month] - 1):.1%}")
+
+
+total = 0
+for month in vendas22:
+    value22 = vendas22[month]
+    value23 = vendas23[month]
+    if value23 < value22:
+        total = total + value22
+    else: 
+        total = total + value23
+    print(f"Mês {month}: {(vendas23[month] / vendas22[month] - 1):.1%}")
+print(total)
