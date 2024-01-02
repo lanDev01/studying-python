@@ -39,3 +39,24 @@ if(product in produtos):
 else:
     # se não houver o produto ele retorna um print
     print("Produto não cadastrado")
+
+# Exercícios 3
+
+dictionaries = {
+    "iphone": 1500,
+    "ipad": 1000,
+    "airpod": 800,
+    "monitor": 2000
+}
+
+# Pegando o input já com letra minuscula
+itemIndex = input("Digite um produto ").lower()
+
+#Passado o
+if itemIndex in dictionaries:
+    itemDictionaries = dictionaries[itemIndex]
+    value = dictionaries[itemIndex]
+    print(f"Produto {itemIndex}, Preço: {value}")
+else:
+    print("Produto não cadastrado!")
+
