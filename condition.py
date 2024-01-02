@@ -42,3 +42,18 @@ else:
     bonus = 0
 
 print("Bonus", bonus)
+
+vendas = 17000
+vendasEmpresas = 60000
+meta = 50000
+
+if vendas > 15000 and vendasEmpresas > meta:
+    bonus = 500
+elif vendas > 10000 and vendasEmpresas > meta:
+    bonus = 150
+elif vendas > 5000 and vendasEmpresas > meta:
+    bonus = 50
+else: 
+    bonus = 0
+
+print("Bonus", bonus)
