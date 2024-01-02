@@ -12,7 +12,7 @@ dictionaries = {
 # Pegar um item no dicionários
 
 dictionariesData = dictionaries["iphone"]
-print(f"{dictionaries}\n")
+print(f"{dictionariesData}\n")
 
 # Mudar o valor de um item
 
