@@ -81,7 +81,7 @@ vendas23 = {
 }
 
 for month in vendas22:
-    print(f"Mês {month}: {(vendas23[month] / vendas22[month] - 1):.1%}")
+    print(f"Mês {month}: {(vendas23[month] / vendas22[month] - 1):.1%} \n")
 
 
 total = 0
@@ -92,5 +92,30 @@ for month in vendas22:
         total = total + value22
     else: 
         total = total + value23
-    print(f"Mês {month}: {(vendas23[month] / vendas22[month] - 1):.1%}")
-print(total)
+    print(f"Mês {month}: {(vendas23[month] / vendas22[month] - 1):.1%} \n")
+print(f"{total}\n")
+
+# Exercícios 5
+
+vendas = {
+    "André": [1000, 500, 300, 5000, 1500, 80, 3000],
+    "Andressa": [1500, 9000, 300, 150, 1500, 120, 130, 55, 500, 8500],
+    "Alan": [800, 100],
+    "Ana": [800, 900, 950, 1200, 1600, 130, 50, 50, 50, 65, 60, 70, 70, 70, 200, 180,]
+}
+
+def calcVendas(listaVendas):
+    qtde = len(listaVendas)
+    bonus1 = qtde * 2
+    valorTotal = sum(listaVendas)
+    bonus2 = 0.01 * valorTotal
+    bonus = bonus1 + bonus2
+
+    return bonus
+
+bonusTotal = 0
+for vendedor in vendas:
+    listaVendas = vendas[vendedor]
+    bonus = calcVendas(listaVendas)
+    print(f"Vendedor: {vendedor}, Bonus: {bonus} \n")
+    bonusTotal = bonusTotal + bonus
